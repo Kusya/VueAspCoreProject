@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VueAspCoreProject.Server", "VueAspCoreProject.Server\VueAspCoreProject.Server.csproj", "{A57A22DB-72D3-4BEB-B101-FC307875ACBC}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "vueaspcoreproject.client", "vueaspcoreproject.client\vueaspcoreproject.client.esproj", "{74BB3838-E517-43AC-8853-77530D1B9A0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A57A22DB-72D3-4BEB-B101-FC307875ACBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A57A22DB-72D3-4BEB-B101-FC307875ACBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A57A22DB-72D3-4BEB-B101-FC307875ACBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A57A22DB-72D3-4BEB-B101-FC307875ACBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BB3838-E517-43AC-8853-77530D1B9A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BB3838-E517-43AC-8853-77530D1B9A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BB3838-E517-43AC-8853-77530D1B9A0C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{74BB3838-E517-43AC-8853-77530D1B9A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BB3838-E517-43AC-8853-77530D1B9A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BB3838-E517-43AC-8853-77530D1B9A0C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA4A040B-B666-4E1E-9BC2-D6CCA978A01F}
+	EndGlobalSection
+EndGlobal
