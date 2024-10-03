@@ -261,3 +261,6 @@ paket-files/
 
 #git ammend files
 -w*
+
+#after merge files
+*.orig
