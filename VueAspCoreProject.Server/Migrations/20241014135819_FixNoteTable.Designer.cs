@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VueAspCoreProject.Server.Repository;
 
@@ -10,9 +11,11 @@ using VueAspCoreProject.Server.Repository;
 namespace VueAspCoreProject.Server.Migrations
 {
     [DbContext(typeof(NoteContext))]
-    partial class NoteContextModelSnapshot : ModelSnapshot
+    [Migration("20241014135819_FixNoteTable")]
+    partial class FixNoteTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
