@@ -10,9 +10,9 @@ using VueAspCoreProject.Server.Repository;
 
 namespace VueAspCoreProject.Server.Migrations
 {
-    [DbContext(typeof(NoteContext))]
-    [Migration("20241014135819_FixNoteTable")]
-    partial class FixNoteTable
+    [DbContext(typeof(ApplicationDBContext))]
+    [Migration("20241021114221_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace VueAspCoreProject.Server.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("VueAspCoreProject.Server.Repository.Note", b =>
+            modelBuilder.Entity("VueAspCoreProject.Server.Models.Note", b =>
                 {
                     b.Property<int>("NoteId")
                         .ValueGeneratedOnAdd()

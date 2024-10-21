@@ -5,7 +5,7 @@
 namespace VueAspCoreProject.Server.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,7 +17,8 @@ namespace VueAspCoreProject.Server.Migrations
                     NoteId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NoteName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NoteContent = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    NoteContent = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NoteColor = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

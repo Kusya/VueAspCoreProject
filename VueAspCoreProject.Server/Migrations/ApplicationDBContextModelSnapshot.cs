@@ -9,8 +9,8 @@ using VueAspCoreProject.Server.Repository;
 
 namespace VueAspCoreProject.Server.Migrations
 {
-    [DbContext(typeof(NoteContext))]
-    partial class NoteContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ApplicationDBContext))]
+    partial class ApplicationDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace VueAspCoreProject.Server.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("VueAspCoreProject.Server.Repository.Note", b =>
+            modelBuilder.Entity("VueAspCoreProject.Server.Models.Note", b =>
                 {
                     b.Property<int>("NoteId")
                         .ValueGeneratedOnAdd()
