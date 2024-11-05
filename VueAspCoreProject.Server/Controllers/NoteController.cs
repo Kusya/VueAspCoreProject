@@ -6,7 +6,7 @@ using VueAspCoreProject.Server.Repository;
 
 namespace VueAspCoreProject.Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class NoteController : ControllerBase
     {

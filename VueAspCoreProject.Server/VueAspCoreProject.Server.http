@@ -4,3 +4,6 @@ GET {{VueAspCoreProject.Server_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{VueAspCoreProject.Server_HostAddress}}/note/
+Accept: application/json
+###
