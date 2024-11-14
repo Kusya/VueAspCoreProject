@@ -6,6 +6,9 @@
         <div v-if="loading" class="loading">
             Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationvue">https://aka.ms/jspsintegrationvue</a> for more details.
         </div>
+        <div>
+            <NoteDashboard/>
+        </div>
 
         <div v-if="post" class="content">
             <table>
@@ -30,8 +33,12 @@
     </div>
 </template>
 
+
+
 <script lang="ts">
     import { defineComponent } from 'vue';
+    //export { default as NoteDashboard } from './Notes/NotesDashboardPage/NoteDashboard';
+    import NoteDashboard from './Notes/NotesDashboardPage/NoteDashboard';
 
     type Forecasts = {
         date: string,
@@ -51,6 +58,9 @@
                 loading: false,
                 post: null
             };
+        },
+        components: {
+            NoteDashboard
         },
         created() {
             // fetch the data when the view is created and the data is
