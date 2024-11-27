@@ -31,8 +31,8 @@ namespace VueAspCoreProject.Server.Controllers
         [HttpGet("{id}")]
         public Note Get(int id)
         {
-            var note = _context.Notes.FirstOrDefault(e => e.NoteId == id);
-            return note;
+            var TargetNote = _context.Notes.FirstOrDefault(note => note.Id == id);
+            return TargetNote;
         }
 
         // POST api/<ValuesController>
@@ -48,8 +48,8 @@ namespace VueAspCoreProject.Server.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
-            var note = _context.Notes.FirstOrDefault(note => note.NoteId == id);
-            note.NoteContent = value;
+            var note = _context.Notes.FirstOrDefault(note => note.Id == id);
+            note.Content = value;
 
             _context.SaveChanges();
         }
@@ -58,7 +58,7 @@ namespace VueAspCoreProject.Server.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var note = _context.Notes.FirstOrDefault(note => note.NoteId == id);
+            var note = _context.Notes.FirstOrDefault(note => note.Id == id);
             _context.Remove(note);
             _context.SaveChanges();
         }
