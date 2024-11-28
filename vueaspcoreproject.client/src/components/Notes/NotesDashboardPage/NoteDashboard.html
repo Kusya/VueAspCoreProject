@@ -1,6 +1,8 @@
 <div v-if="post" id="dashboard">
-    <div>Note Component 
-        <div class="content" style="color: purple">  
+    <div>
+        <div class="content" style="color: purple;
+        border: solid 1px black;
+        border-radius: 10px;">  
         <li v-for="item in post">
         {{ item.noteName }}
       </li>  

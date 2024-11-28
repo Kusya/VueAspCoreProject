@@ -1,4 +1,4 @@
-@import './base.css';
+@import "./base.css";
 
 #app {
   max-width: 1280px;
@@ -13,6 +13,11 @@ a,
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
   padding: 3px;
+}
+
+.card {
+  border: solid 1px black;
+  border-radius: 10px;
 }
 
 @media (hover: hover) {

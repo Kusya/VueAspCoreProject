@@ -2,8 +2,6 @@
 import { defineComponent } from "vue";
 import NoteComponent from "../Note/Note";
 
-//export { default as NoteComponent } from '../Note/Note';
-
 type Notes = {
   id: number;
   name: string;
@@ -18,12 +16,6 @@ interface Data {
 
 export default defineComponent({
     components: {NoteComponent},
-//   data() {
-//     return {
-//         loading: false,
-//         post: null,
-//     }
-//   },
   data(): Data {
     return {
       loading: false,
@@ -31,11 +23,9 @@ export default defineComponent({
     };
   },
   template: `<div>Note Component 
-  <div v-if="post" class="content" style="color: purple">  
-  <li v-for="item in post">
+  <div v-if="post" class="content"  v-for="item in post">
    <NoteComponent :data=item />
-</li>  
-  </div>
+</div>  
 </div>`,
   // props:{
   //   loading: false,
@@ -50,7 +40,7 @@ export default defineComponent({
   },
   methods: {
     fetchData(): void {
-        debugger;
+      
       this.post = null;
       this.loading = true;
 
