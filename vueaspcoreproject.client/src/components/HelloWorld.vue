@@ -2,6 +2,7 @@
     <div class="weather-component">
         <div>
             <NoteDashboard/>
+            <NoteList/>
         </div>
     </div>
 </template>
@@ -11,6 +12,7 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
     import NoteDashboard from './Notes/NotesDashboardPage/NoteDashboard';
+    import NoteList from './Notes/NotesList.vue';
 
     type Forecasts = {
         date: string,
@@ -32,7 +34,8 @@
             };
         },
         components: {
-            NoteDashboard
+            NoteDashboard,
+            NoteList
         },
         created() {
             // fetch the data when the view is created and the data is

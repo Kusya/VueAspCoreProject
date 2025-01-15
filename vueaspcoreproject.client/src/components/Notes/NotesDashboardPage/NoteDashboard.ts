@@ -23,7 +23,7 @@ export default defineComponent({
     };
   },
   template: `<div>Note Component 
-  <div v-if="post" class="content"  v-for="item in post">
+  <div v-if="post" class="content" v-for="item in post">
    <NoteComponent :data=item />
 </div>  
 </div>`,
